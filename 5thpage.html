@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+    <link rel="icon" href="circle-icon.jpg">
+    <link rel="stylesheet" href="styles-movies.css">
+    <title>Flex Box | Container</title>
+</head>
+<body>
+    
+      <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+      
+        <div>
+            <h1 class="display-4 p-3" style="color: white; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Movies-In</h1>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" id="text" class="form-control" placeholder="Search something..." autocomplete="off" >
+                <button class="btn btn-success" id="button-addon2">search</button>
+            </div>
+            <div>
+                <i class="far fa-address-book"></i>
+                <i class="far fa-bell"></i>
+                <i class="far fa-heart"></i>
+                <i class="far fa-closed-captioning"></i>
+                <i class="fas fa-desktop"></i>        
+            </div>      
+      </div>
+      <div class="nav-bar">
+        <ul>
+            <li><a href="#home" id="list">Home</a></li>
+            <li><a href="#news" id="list">Browse</a></li>
+            <li><a href="#contact" id="list">Category</a></li>
+            <li><a href="#contact" id="list">Rating</a></li>
+            <li><a href="#contact" id="list">Language</a></li>
+            <li style="float:right"><a class="active" id="list" href="#about">Contact us</a></li>
+        </ul>
+    </div>
+      <div class="body-container">
+        <div class="container">
+        
+          <h3 class="display-5 p-4">Trending</h3>    
+          <div class="d-flex justify-content-center flex-wrap">            
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://www.washingtonpost.com/graphics/2019/entertainment/oscar-nominees-movie-poster-design/img/black-panther-web.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Black Panther</h2 id="heading">
+                          <p>After his father's death, T'Challa returns home to Wakanda to inherit his throne. 
+                              owever, a powerful enemy related to his family threatens to attack his nation.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div> 
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="data:image/jpeg;base64,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" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">The Batman</h2 id="heading">
+                          <p>The Riddler plays a dangerous game of cat and mouse with Batman and Commissioner Gordon in Gotham City.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNCiszgV-p1imtull5MD04iAUiUGJwZn03Vw&usqp=CAU" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Free Guy</h2 id="heading">
+                          <p>When a bank teller discovers he's actually a background player in an open-world video game, 
+                              he decides to become the hero of his own story -- one that he can rewrite himself. In a world where there's no limits, 
+                              he's determined to save the day 
+                              his way before it's too late, and maybe find a little romance with the coder who conceived him.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="data:image/jpeg;base64,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" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">The Conjuring: The Devil Made Me Do It</h2 id="heading">
+                          <p>Arne Cheyenne Johnson stabs and murders his landlord, claiming to be under 
+                              demonic possession. Ed and Lorraine Warren investigate the case and try to prove his innocence.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BNTFiNzBlYmEtMTcxZS00ZTEyLWJmYmQtMjYzYjAxNGQwODAzXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Venom</h2 id="heading">
+                          <p>While trying to take down Carlton, the CEO of Life Foundation, Eddie, a journalist, investigates 
+                              experiments of human trials. Unwittingly, he gets merged with a symbiotic alien with lethal abilities.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div> 
+              <div class="p-3 bd-highlight">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="https://m.media-amazon.com/images/M/MV5BY2ZlNWIxODMtN2YwZi00ZjNmLWIyN2UtZTFkYmZkNDQyNTAyXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_.jpg" 
+                         alt="" srcset="" height="300px" width="200px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2 id="heading">Mortal Kombat</h2 id="heading">
+                        <p>
+                          Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. 
+                          Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's
+                          Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. 
+                          Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's
+                          Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. 
+                          Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's
+                          Hunted by the fearsome warrior Sub-Zero, MMA fighter Cole Young finds sanctuary at the temple of Lord Raiden. 
+                          Training with experienced fighters Liu Kang, Kung Lao and the rogue mercenary Kano, Cole prepares to stand with Earth's
+                           </p>
+                      </div>
+                    </div>
+                  </div>                    
+            </div>
+              
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Black Widow</h2 id="heading">
+                          <p>Natasha Romanoff, a former KGB spy, is shocked to find out that her ex handler, General Dreykov, 
+                            is still alive. While evading capture by Taskmaster, she is forced to confront her dark past.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>
+              <div class="p-3 bd-highlight">
+                <div class="flip-box">
+                    <div class="flip-box-inner">
+                      <div class="flip-box-front">
+                        <img src="https://static.metacritic.com/images/products/movies/1/5605808a4688643410c51fe88131e3c9.jpg" 
+                         alt="" srcset="" height="300px" width="200px">
+                      </div>
+                      <div class="flip-box-back">
+                        <h2 id="heading">Tom and Jerry</h2 id="heading">
+                        <p>
+                          A legendary rivalry reemerges when Jerry moves into New York City's finest hotel on the eve of the wedding of the century, 
+                          forcing the desperate event planner to hire Tom to get rid of him. As mayhem ensues, 
+                          the escalating cat-and-mouse battle soon threatens to destroy her career, the wedding, and possibly the hotel itself.
+                           </p>
+                      </div>
+                    </div>
+                  </div>                    
+            </div>   
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BZmYzMzU4NjctNDI0Mi00MGExLWI3ZDQtYzQzYThmYzc2ZmNjXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Godzilla vs. Kong</h2 id="heading">
+                          <p>King Kong is transported out of his containment zone after Godzilla resurfaces and creates mayhem. 
+                            Humans need his help to reach Hollow Earth and find a way to subdue the king of the monsters</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://lumiere-a.akamaihd.net/v1/images/p_rayaandthelastdragon_21294_83346778.jpeg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Raya and the Last Dragon</h2 id="heading">
+                          <p>Raya, a warrior, sets out to track down Sisu, a dragon, who transferred all her powers into a 
+                            magical gem which is now scattered all over the kingdom of Kumandra, dividing its people.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              
+          </div>    
+          <h3 class="display-5 p-4">Recommended</h3>    
+          <div class="d-flex justify-content-around flex-wrap">            
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">The Dark Knight</h2 id="heading">
+                          <p>When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, 
+                            Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BYzg0NGM2NjAtNmIxOC00MDJmLTg5ZmYtYzM0MTE4NWE2NzlhXkEyXkFqcGdeQXVyMTA4NjE0NjEy._V1_SX233_CR0,0,233,345_AL_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">TeneT</h2 id="heading">
+                          <p>Armed with only one word, Tenet, and fighting for the survival of the entire world, 
+                            a Protagonist journeys through a twilight world of 
+                            international espionage on a mission that will unfold in something beyond real time.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BMDJiNzUwYzEtNmQ2Yy00NWE4LWEwNzctM2M0MjE0OGUxZTA3XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_FMjpg_UX1000_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Extraction</h2 id="heading">
+                          <p>Tyler Rake, a fearless black market mercenary, embarks on the most deadly extraction of his career when he's 
+                            enlisted to rescue the kidnapped son of an imprisoned international crime lord.</p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BY2JiYTNmZTctYTQ1OC00YjU4LWEwMjYtZjkwY2Y5MDI0OTU3XkEyXkFqcGdeQXVyNTI4MzE4MDU@._V1_FMjpg_UX1000_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">Ready Player One</h2 id="heading">
+                          <p>When the creator of a virtual reality called the OASIS dies, he makes a posthumous challenge to all 
+                            OASIS users to find his Easter Egg,which will give the finder his fortune and control of his world.
+                          </p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div>  
+              <div class="p-3 bd-highlight">
+                  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div class="flip-box-front">
+                          <img src="https://m.media-amazon.com/images/M/MV5BMTU2NjA1ODgzMF5BMl5BanBnXkFtZTgwMTM2MTI4MjE@._V1_.jpg" 
+                           alt="" srcset="" height="300px" width="200px">
+                        </div>
+                        <div class="flip-box-back">
+                          <h2 id="heading">John Wick</h2 id="heading">
+                          <p>
+                            An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took everything from him.
+                          </p>
+                        </div>
+                      </div>
+                    </div>                    
+              </div> 
+              <div class="pagination">
+                <a href="4thpage.html">&laquo;</a>
+                <a href="website.html" >1</a>
+                <a href="2ndpage.html" >2</a>
+                <a href="3rdpage.html">3</a>
+                <a href="4thpage.html" >4</a>
+                <a href="5thpage.html" class="active">5</a>
+                <a href="6thpage.html">6</a>
+                <a href="6thpage.html">&raquo;</a>
+              </div>
+            </div> 
+              
+          </div>           
+        </div>
+        
+</body>
+</html>
